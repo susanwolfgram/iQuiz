@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     let descriptions = ["Addition & Subtraction", "Superhero Trivia", "Theories and Famous Names"]
     var logoImages = [UIImage]()
     
-    
-    
     @IBAction func settings(sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "Settings", message:
             "Settings go here", preferredStyle: UIAlertControllerStyle.Alert)
@@ -41,7 +39,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : TableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
         
-
         cell.label1.text = self.labels[indexPath.row]
         cell.label2.text = self.descriptions[indexPath.row]
         cell.imageview.image = self.logoImages[indexPath.row]
