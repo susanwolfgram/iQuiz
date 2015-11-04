@@ -47,17 +47,22 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XwZ-hW-t8y">
                                                     <rect key="frame" x="8" y="11" width="24" height="24.5"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylc-K6-Ga4">
-                                                    <rect key="frame" x="554" y="8" width="30" height="30"/>
-                                                    <state key="normal" title="&gt;"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDy-mX-H8K">
                                                     <rect key="frame" x="129" y="10" width="276" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylc-K6-Ga4">
+                                                    <rect key="frame" x="562" y="7" width="30" height="30"/>
+                                                    <state key="normal" title="&gt;"/>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ylc-K6-Ga4" secondAttribute="bottom" constant="-1.5" id="QjQ-HS-p9J"/>
+                                                <constraint firstItem="ylc-K6-Ga4" firstAttribute="trailing" secondItem="VLi-eo-3gX" secondAttribute="trailingMargin" id="lXh-uy-y9P"/>
+                                                <constraint firstItem="ylc-K6-Ga4" firstAttribute="top" secondItem="VLi-eo-3gX" secondAttribute="topMargin" constant="-1" id="qv9-A6-uec"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="arrow" destination="ylc-K6-Ga4" id="f7R-Ka-lYr"/>
