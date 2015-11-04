@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib.
         self.tableview.dataSource = self
         logoImages.append(UIImage(named: "math")!)
-        logoImages.append(UIImage(named: "marvel")!)
+        logoImages.append(UIImage(named: "marvel-1")!)
         logoImages.append(UIImage(named: "science")!)
     }
 
